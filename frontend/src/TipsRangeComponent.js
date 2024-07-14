@@ -11,7 +11,7 @@ const TipsRangeComponent = () => {
 
     const fetchTripsByTipsRange = async () => {
         try {
-            const response = await axios.get(`http://localhost:8000/trips/tips-range?min=${minTips}&max=${maxTips}`);
+            const response = await axios.get(`http://localhost:8000/trips/tipsrange?min=${minTips}&max=${maxTips}`);
             if (response && response.data) {
                 setTrips(response.data);
             }

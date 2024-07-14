@@ -36,6 +36,7 @@ const TripDetailsComponent = () => {
                 <table>
                     <thead>
                         <tr>
+                            <th>hvfhs_license_num</th>
                             <th>Pickup Location ID</th>
                             <th>Dropoff Location ID</th>
                             <th>Trip Miles</th>
@@ -48,6 +49,7 @@ const TripDetailsComponent = () => {
                     <tbody>
                         {tripDetails.map((trip) => (
                             <tr key={trip._id}>
+                                <td>{trip.hvfhs_license_num}</td>
                                 <td>{trip.PULocationID}</td>
                                 <td>{trip.DOLocationID}</td>
                                 <td>{trip.trip_miles}</td>

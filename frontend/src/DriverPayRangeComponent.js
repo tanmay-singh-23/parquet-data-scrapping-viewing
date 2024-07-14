@@ -11,7 +11,7 @@ const DriverPayRangeComponent = () => {
 
     const fetchTripsByDriverPayRange = async () => {
         try {
-            const response = await axios.get(`http://localhost:8000/trips/driver-pay-range?min=${minPay}&max=${maxPay}`);
+            const response = await axios.get(`http://localhost:8000/trips/driverpayrange?min=${minPay}&max=${maxPay}`);
             if (response && response.data) {
                 setTrips(response.data);
             }

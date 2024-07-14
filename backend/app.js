@@ -90,7 +90,7 @@ app.get('/trips/details', async (req, res) => {
 
     try {
         const trips = await TaxiTrip.find({})
-            .select('PULocationID DOLocationID trip_miles trip_time base_passenger_fare driver_pay tips')
+            .select('hvfhs_license_num PULocationID DOLocationID trip_miles trip_time base_passenger_fare driver_pay tips')
             .limit(20);
 
         res.json(trips);
