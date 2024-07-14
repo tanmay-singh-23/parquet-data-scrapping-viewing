@@ -176,7 +176,7 @@ app.get('/trips/averagefareperlocation', async (req, res) => {
                     averageFare: { $avg: "$base_passenger_fare" }
                 }
             }
-        ]);
+        ]).limit(20);
         res.json(trips);
     } catch (err) {
         res.status(500).json({ message: err.message });
