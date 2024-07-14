@@ -1,0 +1,736 @@
+/* frontend/src/styles.css */
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    /* Ensure horizontal overflow is hidden */
+}
+
+.app-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+/* Navigation Menu */
+nav {
+    background-color: #333;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-radius: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+
+/* Scrollable Table Container */
+.table-container {
+    max-height: 550px;
+    overflow-y: auto;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table th,
+table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background-color: #f2f2f2;
+}
+
+/* frontend/src/styles.css */
+
+/* Add professional styling for form labels and inputs */
+
+form {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    /* Ensure padding is included in width */
+}
+
+form button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* frontend/src/styles.css */
+
+/* Style for TripComponent */
+.trip-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.trip-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.trip-container form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.trip-container form label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.trip-container form input[type="text"] {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex: 1;
+}
+
+.trip-container form button {
+    padding: 8px 16px;
+    margin: 5px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.trip-container form button:hover {
+    background-color: #0056b3;
+}
+
+.trip-details {
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+}
+
+.trip-details h3 {
+    margin-bottom: 10px;
+}
+
+.trip-details p {
+    margin-bottom: 5px;
+}
+
+.trip-details p strong {
+    margin-right: 5px;
+}
+
+.error-message {
+    color: #dc3545;
+    margin-top: 10px;
+}
+
+.trip-container button[disabled] {
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.trip-container button[disabled]:hover {
+    background-color: #007bff;
+}
+
+.trip-details {
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+}
+
+.trip-details h3 {
+    margin-bottom: 15px;
+    color: #007bff;
+}
+
+.trip-details p {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.trip-details p strong {
+    margin-right: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+.trip-details p:nth-child(even) {
+    background-color: #f8f9fa;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.trip-details p:nth-child(odd) {
+    background-color: #e9ecef;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+
+
+/* Individual Component Specific Styles (add as needed) */
+.date-range-container,
+.fare-range-container,
+.time-range-container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Additional Styles for Specific Components */
+.home-container,
+.grouped-data-container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Table Styling for TotalPerLocationComponent */
+.total-per-location-container {
+    max-width: 600px;
+    /* Adjusted to match previous component */
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    font-size: 16px;
+}
+
+.total-per-location-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000000;
+    /* Adjust color as needed */
+}
+
+.total-per-location-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.total-per-location-container table th,
+.total-per-location-container table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.total-per-location-container table th {
+    background-color: #f2f2f2;
+    color: #333;
+    /* Adjust color as needed */
+    font-weight: bold;
+}
+
+.total-per-location-container table td {
+    font-size: 14px;
+    color: #555;
+    /* Adjust color as needed */
+}
+
+.total-per-location-container table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.total-per-location-container table tbody tr:hover {
+    background-color: #f0f0f0;
+}
+
+
+
+/* frontend/src/styles.css */
+
+/* Table Styles for AverageFarePerLocationComponent */
+.average-fare-per-location-container {
+    max-width: 600px;
+    /* Adjusted to match previous component */
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    font-size: 16px;
+    /* Adjusted font size to match previous component */
+}
+
+.average-fare-per-location-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.average-fare-per-location-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.average-fare-per-location-container table th,
+.average-fare-per-location-container table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.average-fare-per-location-container table th {
+    background-color: #f2f2f2;
+    color: #333;
+    /* Adjust color as needed */
+    font-weight: bold;
+}
+
+.total-per-location-container table td {
+    font-size: 14px;
+    color: #555;
+    /* Adjust color as needed */
+}
+
+
+.total-per-location-container table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.total-per-location-container table tbody tr:hover {
+    background-color: #f0f0f0;
+}
+
+/* Loading State */
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 18px;
+    /* Adjusted font size to match previous component */
+    color: #555;
+}
+
+.loading-container svg {
+    margin-right: 10px;
+    font-size: 3em;
+    /* Adjusted size to match previous components */
+}
+
+
+
+/* frontend/src/styles.css */
+
+/* Container Styles for GroupedDataComponent */
+.grouped-data-container {
+    max-width: 600px;
+    /* Match the max-width of AverageFarePerLocationComponent */
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    font-size: 16px;
+    /* Match the font size of AverageFarePerLocationComponent */
+}
+
+.grouped-data-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.grouped-data-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.grouped-data-container table th,
+.grouped-data-container table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.grouped-data-container table th {
+    background-color: #f2f2f2;
+}
+
+/* Loading State */
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 18px;
+    /* Match the loading text font size of AverageFarePerLocationComponent */
+    color: #555;
+}
+
+.loading-container svg {
+    margin-right: 10px;
+    font-size: 3em;
+    /* Match the loading icon size of AverageFarePerLocationComponent */
+}
+
+
+/* frontend/src/styles.css */
+
+/* Styles for TripDetailsComponent */
+.trip-details-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.trip-details-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.trip-details-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.trip-details-container table th,
+.trip-details-container table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.trip-details-container table th {
+    background-color: #f2f2f2;
+}
+
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    /* Adjust height as needed */
+}
+
+.loading-container p {
+    margin-left: 10px;
+    font-size: 18px;
+    color: #555;
+}
+
+
+
+/* frontend/src/styles.css */
+
+/* Styles for LocationTripsComponent */
+.table-container {
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.table-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.table-container .location-input {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.table-container .location-input label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.table-container .location-input input[type="text"] {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.table-container .location-input button {
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.table-container .location-input button:hover {
+    background-color: #0056b3;
+}
+
+.table-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.table-container table th,
+.table-container table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.table-container table th {
+    background-color: #f2f2f2;
+}
+
+
+/* frontend/src/styles.css */
+
+/* Common styles for components */
+.table-container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.table-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.table-container .inputstyle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.table-container .inputstyle label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.table-container .inputstyle input[type="date"] {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.table-container .inputstyle button {
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.table-container .inputstyle button:hover {
+    background-color: #0056b3;
+}
+
+.table-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.table-container table th,
+.table-container table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.table-container table th {
+    background-color: #f2f2f2;
+}
+
+
+
+/* style for fareRangeComponent.js ------------ /* style for TimeRangeComponent.js */ 
+/* style for DriverPayRangeComponent.js ------------ /* style for TipsRangeComponent.js */ 
+
+.table-container .inputstyle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.table-container .inputstyle label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.table-container .inputstyle input[type="number"] {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.table-container .inputstyle button {
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.table-container .inputstyle button:hover {
+    background-color: #0056b3;
+}
+
+
+/* style for DriverPayRangeComponent.js */
+
+.sharedTripButton {
+    display: inline-block;
+    margin-left: 42.5%;
+    margin-bottom: 20px;
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid #007bff; /* Border color */
+    color: #007bff; /* Text color */
+    background-color: transparent; /* Transparent background */
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.sharedTripButton {
+    background-color: #007bff; /* Background color on hover */
+    color: #fff; /* Text color on hover */
+}
+
+.sharedTripButton {
+    outline: none; /* Remove default focus outline */
+}
+
+.sharedTripButton {
+    transform: translateY(1px); /* Push button down when clicked */
+}
+
+
+
+/* Responsive Styles (optional, add media queries as needed) */
+@media (max-width: 768px) {
+    .app-container {
+        padding: 10px;
+    }
+}
+
+/* Hover and Click Effects */
+nav ul li a:hover {
+    background-color: #555;
+    cursor: pointer;
+}
+
+nav ul li a.active {
+    background-color: #4CAF50;
+    /* Active link color */
+    cursor: pointer;
+    border-radius: 4px;
+}
