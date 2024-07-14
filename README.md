@@ -6,11 +6,11 @@ The Parquet Data Application is a web-based tool for querying and displaying tax
 
 ## Technologies Used
 
-- Frontend: ReactJS, CSS
-- Backend: Node.js, Express.js
-- Database: MongoDB (with Mongoose)
-- Data Acquisition: Python, BeautifulSoup
-- Data Processing: pandas
+- Frontend:  ReactJS, CSS
+- Backend:  Node.js, Express.js
+- Database:  MongoDB (with Mongoose)
+- Data Acquisition:  Python, BeautifulSoup
+- Data Processing:  pandas
 
 ## Project Workflow
 
@@ -39,9 +39,11 @@ Include screenshots of the Parquet Data Application to showcase its interface an
 ![image](https://github.com/user-attachments/assets/306a7a08-f1e9-4a24-955a-668cba85b40e)
 
 
+
 2. Fetch Specific Trips Data -
 
 ![image](https://github.com/user-attachments/assets/815428d7-c1e9-4a11-985d-c25533b3fc89)
+
 
 
 3. Fetch Total Trips done Per Location -
