@@ -1,0 +1,71 @@
+Parquet Data Application
+
+
+Description :
+
+	The Parquet Data Application is a web-based tool for querying and displaying taxi trip data stored in a MongoDB database. Initially, the data is 		acquired by scraping data from the NYC TLC Trip Record Data website using Python and BeautifulSoup. The scraped data is then processed into a pandas 	DataFrame and subsequently loaded into a MongoDB database named parquetDB. The application provides a user-friendly interface to fetch and display 		data based on various parameters such as license number, dispatch number, date, location IDs, trip metrics, and financial details. The frontend is 		developed using ReactJS and styled with CSS, while the backend utilizes Node.js and Express.js.
+
+
+Technologies Used :
+
+	• Frontend:  ReactJS, CSS
+	• Backend:  Node.js, Express.js
+	• Database:  MongoDB (with Mongoose)
+	• Data Acquisition:  Python, BeautifulSoup
+	• Data Processing:  Pandas
+	• Version Control: Git
+
+
+
+Data Understanding :
+	These are the parquet data column –
+	'hvfhs_license_num', 'dispatching_base_num', 'originating_base_num', 'request_datetime',  'on_scene_datetime', 'pickup_datetime','dropoff_datetime', 	'PULocationID', 'DOLocationID','trip_miles','trip_time','base_passenger_fare','tolls','bcf','sales_tax','congestion_surcharge','airport_fee','tips', 	'driver_pay', 'shared_request_flag', 'shared_match_flag', 'access_a_ride_flag','wav_request_flag', 'wav_match_flag' .
+
+	From these data we can infer that this represent the taxi data with information like location, time, trip distance and time taken, fare, toll 			fee, driver fee, tips, tax, license number, pickup and dropoff date and time too. Also we can derive from data the average or total fare, tip, 			distance, most drop-off location, etc. 
+ 
+
+Project Workflow :
+
+	1. Data Acquisition:
+		• Using Python and it’s libraries like pyarrow, requests, from bs4 imported BeautifulSoup, os to extract the parquet data of month Feb and 			March 2019 from NYC TLC Trip Record Data website –“ https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page”.
+		• Used the pandas library of python to load the parquet data into a DataFrame.
+
+	2. Data Storage:
+		• Using pymongo and mongoclient from python libraries, we loaded the parquet data into MongoDB database which is named as ParquetDB having 			collection name parquetCollection with a proper Schema.
+		• Total data count is approx. 63.4M.
+		• Each record represent a taxi trip with detailed attributes.
+
+	3. Backend Development:
+		• Created a RESTful API using NodeJs and ExpressJs to serve as a backend server. There are multiple endpoints created to fetch and filter 			data stored in MongoDB based on user choice.
+		• Connected a MongoDB Compass with the backend server using Node Module Mongoose.
+		• Some of the api are fetching all or single data, filtering trip data based on location, api to fetch a avg. or total fare of trip etc.
+		• Added Try and Catch block to proper handling of error.
+
+	4. Frontend Implementation:
+		• The frontend interface is implemented using React.js along with CSS for styling. Users can input various filters (e.g., license number, 			date, location IDs) to query and display the data in an interactive table format.
+		• Created a different component for different API calls to fetch or filter data.
+		• Display the parquet taxi data stored in MongoDB in a Tabular format.
+		• Use Axios Library to fetch data.
+		• Use fortawesome library to use its svg - icons to give a loading effect.
+		• Added a different Route for different API.
+		• Created a Navigation bar to easily navigate to different endpoints.
+		• Designed an interactive frontend, added a hover, active effect etc.
+
+	4. Integration:
+		• Integration of backend (ExpressJS) api’s with the frontend (ReactJS) is done by “axios” library.
+		• Storing the result of axios fetch call to a variable which can be used to get desired outcome.
+
+	5. Uploaded Project to Github:
+		• I uploaded my project to GitHub using the command line. 
+		• This involved initializing a Git repository, staging and committing changes, creating a new repository on GitHub, setting the remote 				repository URL, and pushing the committed changes to GitHub's branch. 
+		• The project is now accessible on GitHub for collaboration and version control.
+		Github Link – “tanmay-singh-23/parquet-data-scrapping-viewing (github.com)”
+
+
+System Design :
+
+	> Web Scraping : Used Python script along with BeautifulSoup to scrap data and then    converted to dataframe using pandas and finally save it in 				 MongoDB database using pymongo library of python.
+	> Frontend : Used ReactJS for fronted and styled with CSS.
+	> Backend :  Used NodeJS and ExpressJS to develop the RESTful API’s along with Error Handling and used mongoDB as database using mongoose module.
+	> Integration: Integrate backend api with frontend using “axios”. Used Github for managing and collaboration of project.
+	> Miscellaneous: Fortawesome library for loading effects.
