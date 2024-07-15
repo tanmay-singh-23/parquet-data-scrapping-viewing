@@ -52,6 +52,12 @@ Include screenshots of the Parquet Data Application to showcase its interface an
 
 
 
+4. Fetch Average Fare per location -
+
+   ![image](https://github.com/user-attachments/assets/12f0271c-ace5-4f46-8db3-79480541a1aa)
+
+
+
 
 ## Credits
 
